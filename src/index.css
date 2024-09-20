@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+:root{
+  --background: #5F22D9;
+  --primary: #51D6CA;
+  --secondary: #2C016D;
+  --accent: #FD4B95;
+  --text: #FFFFFF;
+}
+
+h1 {
+  font-size: 32px;
+  font-family: "Miriam Libre";
+}
+
+h2 {
+  color: var(--text);
+  font-size: 20px;
+  font-family: "Miriam Libre";
+}
+
+h3 {
+  font-size: 12px;
+  font-family: "Miriam Libre";
+}
+
+p {
+  font-size: 20px;
+  font-family: "Domine";
+  line-height: 140%;
+}
+
+a {
+  font-family: "Miriam Libre";
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+  width: 100%;
+}
+
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 24px;
+  }
+  
+  h2 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}

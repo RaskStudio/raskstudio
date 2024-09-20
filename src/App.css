@@ -1,0 +1,316 @@
+.App {
+  height: 100%;
+  width: 100%;
+}
+
+.home_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10rem 20rem;
+}
+
+.PortfolioBtn {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .home_container {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .PortfolioBtn {
+    display: block;
+    background-color: var(--primary);
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    margin-block: 3rem;
+  }
+
+  .PortfolioBtn a {
+    text-decoration: none;
+    color: var(--text);
+  }
+}
+
+/*About*/
+
+.SiteNav nav {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+}
+
+.SiteNav nav ul {
+  flex-direction: row;
+  gap: 20rem;
+}
+
+.AboutContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 5rem 20rem;
+  gap: 10rem;
+}
+
+.AboutContent {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.SkillsContainer {
+  background-color: #761cfd;
+  padding: 5rem 20rem;
+}
+
+.SkillInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.SkillCatalog {
+  width: 100%;
+}
+
+.SkillSelector {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.Coding {
+  width: 100%;
+  background-color: #8535fd;
+  text-align: center;
+}
+
+.SkillCoding {
+  background-color: #8535fd;
+}
+
+.Skill {
+  padding-block: 1rem;
+  cursor: pointer;
+}
+
+.Programs {
+  width: 100%;
+  background-color: #944efd;
+  text-align: center;
+}
+
+.SkillPrograms {
+  background-color: #944efd;
+}
+
+.OS {
+  width: 100%;
+  background-color: #a468fd;
+  text-align: center;
+}
+
+.SkillOS {
+  background-color: #a468fd;
+}
+
+.SkillContent {
+  width: 100%;
+  display: flex;
+  padding: 2rem 20rem;
+  justify-content: center;
+}
+
+.activeSkill h2 {
+  color: var(--primary);
+}
+
+@media (max-width: 480px) {
+  .SiteNav nav ul {
+    gap: 2rem;
+  }
+
+  .AboutContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 2rem;
+    gap: 5rem;
+  }
+
+  .SkillsContainer {
+    background-color: #761cfd;
+    padding: 5rem 2rem;
+  }
+
+  .SkillInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .SkillContent {
+    width: 100%;
+    display: flex;
+    padding: 2rem 0;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .SkillContent img {
+    width: 10rem;
+    height: 10.5rem;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+/* Portfolio*/
+
+.Headliner {
+  display: flex;
+  flex-direction: row;
+}
+
+.PfContainer {
+  width: 100%;
+  padding: 5rem 20rem;
+}
+
+.PfWebsites {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 5rem;
+  padding-block: 5rem;
+}
+
+.PfLink {
+  background-color: var(--primary);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.PfLink img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+}
+
+.PfLink h2 {
+  padding: 1rem 2rem;
+}
+
+.PhotoContainer {
+  width: 100%;
+  padding: 5rem 20rem;
+  background-color: #761cfd;
+}
+
+.PhotoContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 5rem;
+  padding-block: 5rem;
+}
+
+@media (max-width: 480px) {
+  .PfContainer {
+    padding: 5rem 2rem;
+  }
+
+  .PhotoContainer {
+    padding: 5rem 2rem;
+  }
+
+  .PhotoContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    padding-block: 5rem;
+  }
+
+  .PhotoContent img {
+    width: 45%;
+  }
+}
+
+/* Ribe Bryghus*/
+
+.RbContiner {
+  width: 100%;
+  padding: 5rem 20rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.RbNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.RbNav .Headliner {
+  width: 100%;
+}
+
+.RbNav button {
+  background-color: var(--accent);
+  border: 0;
+  padding: 1rem;
+  color: var(--text);
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+@media (max-width: 480px) {
+  .RbContiner {
+    width: 100%;
+    padding: 5rem 2rem;
+    gap: 3rem;
+  }
+
+  .RbNav button {
+    background-color: var(--accent);
+    border: 0;
+    padding: 1rem;
+    color: var(--text);
+    cursor: pointer;
+  }
+}
+
+/* Empty Site*/
+
+.EmptyContiner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-block: 5rem;
+  gap: 5rem;
+}
+
+.EmptyContiner img{
+width: 30%;
+}
+
+.EmptyContiner button {
+  background-color: var(--accent);
+  border: 0;
+  padding: 1rem 2rem;
+  color: var(--text);
+  cursor: pointer;
+  border-radius: 8px;
+}
